@@ -41,9 +41,11 @@ def ALPHA41():
 def ALPHA161():
     ALPHA161=dv.add_formula('Alpha141','Ts_Mean(Max(Max((high-low),Abs(Delay(close,1)-high)),Abs(Delay(close,1)-low)),12)',
                    is_quarterly=False)
+    return ALPHA161
 
 def BIAS5():
     BIAS5=dv.add_formula('bias5_pro','(close-Ts_Mean(close,5))*100/Ts_Mean(close,5)',is_quarterly=False)
+    return BIAS5
     
 
 #test output
